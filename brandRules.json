@@ -1,0 +1,80 @@
+{
+  "brandName": "Enterprise Brand",
+  "colors": {
+    "approved": [
+      {
+        "name": "Primary Blue",
+        "hex": "#0066CC",
+        "usage": "primary"
+      },
+      {
+        "name": "Secondary Blue",
+        "hex": "#003D7A",
+        "usage": "secondary"
+      },
+      {
+        "name": "Accent Orange",
+        "hex": "#FF6600",
+        "usage": "accent"
+      },
+      {
+        "name": "Neutral Gray",
+        "hex": "#666666",
+        "usage": "text"
+      },
+      {
+        "name": "Light Gray",
+        "hex": "#E5E5E5",
+        "usage": "background"
+      },
+      {
+        "name": "White",
+        "hex": "#FFFFFF",
+        "usage": "background"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "usage": "text"
+      }
+    ],
+    "tolerance": 10
+  },
+  "fonts": {
+    "approved": [
+      {
+        "name": "Roboto",
+        "fallback": "sans-serif"
+      },
+      {
+        "name": "Open Sans",
+        "fallback": "sans-serif"
+      },
+      {
+        "name": "Lato",
+        "fallback": "sans-serif"
+      }
+    ],
+    "default": {
+      "name": "Roboto",
+      "fallback": "sans-serif"
+    }
+  },
+  "logo": {
+    "identifier": "logo",
+    "minWidth": 100,
+    "minHeight": 50,
+    "aspectRatio": {
+      "min": 1.5,
+      "max": 3.0
+    },
+    "allowedPositions": [
+      "top-left",
+      "top-right",
+      "bottom-left",
+      "bottom-right"
+    ],
+    "minDistanceFromEdge": 20
+  }
+}
+

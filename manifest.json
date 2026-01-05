@@ -1,0 +1,25 @@
+{
+  "id": "brandguardai",
+  "name": "BrandGuard AI",
+  "version": "1.0.0",
+  "main": "index.html",
+  "host": {
+    "app": "EX",
+    "minVersion": "1.0.0"
+  },
+  "uiEntry": [
+    {
+      "type": "panel",
+      "label": "BrandGuard AI",
+      "panelId": "brandguard-panel"
+    }
+  ],
+  "requiredPermissions": [
+    "document",
+    "layers",
+    "text",
+    "colors"
+  ],
+  "manifestVersion": 1
+}
+

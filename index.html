@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandGuard AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="panel-container">
+        <!-- Header Section -->
+        <header class="panel-header">
+            <h1 class="panel-title">BrandGuard AI</h1>
+            <p class="panel-subtitle">Brand Compliance Checker</p>
+        </header>
+
+        <!-- Compliance Score Section -->
+        <section class="score-section">
+            <div class="score-container">
+                <div class="score-circle">
+                    <svg class="score-ring" viewBox="0 0 120 120">
+                        <circle class="score-ring-bg" cx="60" cy="60" r="54"></circle>
+                        <circle class="score-ring-progress" cx="60" cy="60" r="54" id="scoreRing"></circle>
+                    </svg>
+                    <div class="score-value">
+                        <span id="scoreNumber">100</span>
+                        <span class="score-label">/100</span>
+                    </div>
+                </div>
+                <p class="score-description" id="scoreDescription">Compliant</p>
+            </div>
+        </section>
+
+        <!-- Compliance Breakdown Section -->
+        <section class="breakdown-section">
+            <h2 class="section-title">Compliance Breakdown</h2>
+            
+            <div class="compliance-item" id="colorCompliance">
+                <div class="compliance-header">
+                    <span class="compliance-icon" id="colorIcon">✓</span>
+                    <span class="compliance-label">Color Compliance</span>
+                </div>
+                <p class="compliance-status" id="colorStatus">Compliant</p>
+                <p class="compliance-details" id="colorDetails">All colors match brand guidelines</p>
+            </div>
+
+            <div class="compliance-item" id="fontCompliance">
+                <div class="compliance-header">
+                    <span class="compliance-icon" id="fontIcon">✓</span>
+                    <span class="compliance-label">Font Compliance</span>
+                </div>
+                <p class="compliance-status" id="fontStatus">Compliant</p>
+                <p class="compliance-details" id="fontDetails">All fonts are brand-approved</p>
+            </div>
+
+            <div class="compliance-item" id="logoCompliance">
+                <div class="compliance-header">
+                    <span class="compliance-icon" id="logoIcon">✓</span>
+                    <span class="compliance-label">Logo Compliance</span>
+                </div>
+                <p class="compliance-status" id="logoStatus">Compliant</p>
+                <p class="compliance-details" id="logoDetails">Logo placement and size are correct</p>
+            </div>
+        </section>
+
+        <!-- Action Buttons Section -->
+        <section class="actions-section">
+            <button class="action-button secondary" id="fixColorsBtn">
+                Fix Colors
+            </button>
+            <button class="action-button secondary" id="fixFontsBtn">
+                Fix Fonts
+            </button>
+            <button class="action-button secondary" id="fixLogoBtn">
+                Fix Logo
+            </button>
+            <button class="action-button primary" id="fixAllBtn">
+                Fix All
+            </button>
+        </section>
+
+        <!-- Status Message -->
+        <div class="status-message" id="statusMessage"></div>
+    </div>
+
+    <script src="colorChecker.js"></script>
+    <script src="fontChecker.js"></script>
+    <script src="logoChecker.js"></script>
+    <script src="complianceChecker.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
